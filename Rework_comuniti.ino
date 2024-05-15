@@ -36,7 +36,7 @@ void loop() {
     while (true) {
       // 왼쪽으로 이동
       if (movingToLeft1) {
-        stepper1.setSpeed(200);
+        stepper1.setSpeed(100);
         stepper1.runSpeed();
         
         // 왼쪽 리밋스위치에 닿으면 멈춤
@@ -62,7 +62,7 @@ void loop() {
       } 
       // 오른쪽으로 이동
       else {
-        stepper1.setSpeed(-200);
+        stepper1.setSpeed(-100);
         stepper1.runSpeed();
         
         // 오른쪽 리밋스위치에 닿으면 멈춤
@@ -103,7 +103,7 @@ void loop() {
     while (true) {
       // 왼쪽으로 이동
       if (movingToLeft2) {
-        stepper2.setSpeed(200);
+        stepper2.setSpeed(100);
         stepper2.runSpeed();
         
         // 왼쪽 리밋스위치에 닿으면 멈춤
@@ -129,7 +129,7 @@ void loop() {
       } 
       // 오른쪽으로 이동
       else {
-        stepper2.setSpeed(-200);
+        stepper2.setSpeed(-100);
         stepper2.runSpeed();
         
         // 오른쪽 리밋스위치에 닿으면 멈춤
