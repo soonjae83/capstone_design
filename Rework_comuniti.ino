@@ -40,7 +40,7 @@ void loop() {
         stepper1.runSpeed();
         
         // 왼쪽 리밋스위치에 닿으면 멈춤
-        if (digitalRead(LEFT_LIMIT_SWITCH_1) == HIGH) {
+        if (digitalRead(RIGHT_LIMIT_SWITCH_1) == HIGH) {
           stepper1.setSpeed(0);
           stepper1.runSpeed();
           Serial.println("FirstComeC");
@@ -66,7 +66,7 @@ void loop() {
         stepper1.runSpeed();
         
         // 오른쪽 리밋스위치에 닿으면 멈춤
-        if (digitalRead(RIGHT_LIMIT_SWITCH_1) == HIGH) {
+        if (digitalRead(LEFT_LIMIT_SWITCH_1) == HIGH) {
           stepper1.setSpeed(0);
           stepper1.runSpeed();
           Serial.println("FirstGoC");
