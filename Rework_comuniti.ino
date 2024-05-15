@@ -122,7 +122,7 @@ void loop() {
                 break;
               }
             }
-          }
+          } break;
         }
       } 
       // 오른쪽으로 이동
@@ -158,7 +158,7 @@ void loop() {
         if (stopCommand == "Sstop") {
           break; // loop() 함수 종료
         }
-      }
+      } break;
     }
   }
 }
