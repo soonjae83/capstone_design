@@ -57,7 +57,8 @@ void loop() {
                 break;
               }
             }
-          }
+          } 
+          return;
         }
       }
       // 오른쪽으로 이동
@@ -84,18 +85,10 @@ void loop() {
               }
             }
           }
-        }
-      }
-      
-      // stop 명령어를 받으면 로봇을 멈춤
-      if (Serial.available() > 0) {
-        String stopCommand = Serial.readStringUntil('\n');
-        if (stopCommand == "Ostop") {
-          break; // loop() 함수 종료
+          return;
         }
       }
     } 
-    break;
   }
   // 스텝모터 2 시작
   if (command == "SecondCome") {
@@ -124,6 +117,7 @@ void loop() {
               }
             }
           }
+          return;
         }
       }
       // 오른쪽으로 이동
@@ -150,17 +144,9 @@ void loop() {
               }
             }
           }
-        }
-      }
-      
-      // stop 명령어를 받으면 로봇을 멈춤
-      if (Serial.available() > 0) {
-        String stopCommand = Serial.readStringUntil('\n');
-        if (stopCommand == "Sstop") {
-          break; // loop() 함수 종료
+          return;
         }
       }
     } 
-    break;
   }
 }
