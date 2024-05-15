@@ -97,9 +97,7 @@ void loop() {
     }
   }
   // 스텝모터 2 시작
-  else if (command == "SecondCome") {
-
-    
+  if (command == "SecondCome") {
     while (true) {
       // 왼쪽으로 이동
       if (movingToLeft2) {
