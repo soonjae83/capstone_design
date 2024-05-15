@@ -59,7 +59,7 @@ void loop() {
             }
           }
         }
-      }  break; 
+      }
       // 오른쪽으로 이동
       else {
         stepper1.setSpeed(-100);
@@ -85,7 +85,7 @@ void loop() {
             }
           }
         }
-      }  break;
+      }
       
       // stop 명령어를 받으면 로봇을 멈춤
       if (Serial.available() > 0) {
@@ -94,7 +94,8 @@ void loop() {
           break; // loop() 함수 종료
         }
       }
-    }
+    } 
+    break;
   }
   // 스텝모터 2 시작
   if (command == "SecondCome") {
@@ -124,7 +125,7 @@ void loop() {
             }
           }
         }
-      }  break; 
+      }
       // 오른쪽으로 이동
       else {
         stepper2.setSpeed(-100);
@@ -150,7 +151,7 @@ void loop() {
             }
           }
         }
-      }  break;
+      }
       
       // stop 명령어를 받으면 로봇을 멈춤
       if (Serial.available() > 0) {
@@ -159,6 +160,7 @@ void loop() {
           break; // loop() 함수 종료
         }
       }
-    }
+    } 
+    break;
   }
 }
